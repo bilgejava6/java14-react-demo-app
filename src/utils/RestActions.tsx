@@ -38,3 +38,7 @@ export const alternateRegister = (user: IUser)=>{
       })
 };
 
+export const searchUsers = (searchText: string)=>{
+  return fetch('http://localhost:9090/user/search?userName='+searchText)
+  .then(data=>data.json());
+}

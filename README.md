@@ -188,3 +188,5 @@ npm i react-router-dom
  npm install sweetalert --save
 ```
   
+## FETCH & AXIOS Kullanımları
+

@@ -9,6 +9,7 @@ import {
   carpmaYap
 } from './utils/Config';
 import Register from './pages/Register';
+import SearchUser from './pages/SearchUser';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
@@ -19,6 +20,7 @@ const route =
     <Route path='/' element={<App />} />
     <Route path='/login' element={<Login />} />
     <Route path='/register' element={<Register />} />
+    <Route path='/searchuser' element={<SearchUser />} />
   </Routes>
 </BrowserRouter>
 
