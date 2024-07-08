@@ -56,6 +56,7 @@ function App() {
     * JS kullandığınızda Object alanlarını belirtmek zorunda değilsiniz.
     */
 
+   const yeniButton = (buttonAdi: string) => <button>{buttonAdi}</button>;
 
   return (
     <>
@@ -67,7 +68,9 @@ function App() {
           <label>müşteri adı........: {m.ad}</label><br />
           <label>müşteri adresi.....: {m.adres}</label><br />
           <label>müşteri telefonu...: {m.telefon}</label><br />
+            {yeniButton('Yeni bir buton denemesi ')}
           <br /><br />
+        
         </>
         )
       }
