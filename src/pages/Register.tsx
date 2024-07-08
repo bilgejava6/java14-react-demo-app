@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
-
+import { NavLink } from 'react-router-dom';
+import {
+  register
+} from '../utils/RestActions';
 function Register() {
   const [userName,setUserName] = useState('');
   const [password,setPassword] = useState('');
@@ -7,11 +10,12 @@ function Register() {
   const [email,setEmail] = useState('');
   const [isEmpty,setIsEmpty] = useState(false);
   
-  const register = ()=>{
+  const registerUser = ()=>{
       if(userName === '' || password === '' || email === '')
         setIsEmpty(true);
       else{
         setIsEmpty(false);
+        register(userName,password,rePassword,email);
       }
   };
 
@@ -55,10 +59,11 @@ function Register() {
                   <input onChange={evt=>setEmail(evt.target.value)} type="email" className="form-control" placeholder='email'/>
                 </div>
                 <div className="mb-3 d-grid">
-                    <input onClick={register} type="button" value="Register" className="btn btn-success" />    
+                    <input onClick={registerUser} type="button" value="Register" className="btn btn-success" />    
                 </div>   
+               
                 <div className="mb-3 text-center d-grid">
-                    <a className="btn btn-outline-warning" href="/login">login</a>
+                  <NavLink className="btn btn-outline-warning" to={'/login'}>login</NavLink>
                 </div>                     
             </div>
         </div>
