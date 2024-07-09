@@ -1,10 +1,26 @@
 import React from 'react'
 
-function GamerCard() {
+interface IGameProps{
+    takim: string,
+    renk: number
+}
+
+function GamerCard(props: IGameProps) {
+
+    const getColour= ()=>{
+        switch (props.renk) {
+            case 1: return "row text-bg-primary";
+            case 2: return "row text-bg-success";
+            case 3: return "row text-bg-warning";
+            case 4: return "row text-bg-danger";
+            case 5: return "row text-bg-info";            
+            default: return "row text-bg-primary";
+        }
+    }
   return (
     <div className='m-1 shadow'>
-        <div className="row text-bg-primary"  style={{borderTopLeftRadius: '15px', borderTopRightRadius:'15px'}}>
-            <h1 className='text-center'>A Takımı</h1>
+        <div className={getColour()}  style={{borderTopLeftRadius: '15px', borderTopRightRadius:'15px'}}>
+            <h1 className='text-center'>{props.takim}</h1>
         </div>
         <div className="row mt-5">
             <h5 className='text-center'>Sayıyı tahmin et</h5>
