@@ -36,7 +36,7 @@
     Uygulamayı TypeScript temelli olarak kurmak.
 
 ```bash
-    npx create-react-app yeni-uygulama --template typescript
+    npx create-react-app odev5 --template typescript
 ```
 
 ## Uygulamayı başlatmak 
