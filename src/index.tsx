@@ -10,6 +10,7 @@ import {
 } from './utils/Config';
 import Register from './pages/Register';
 import SearchUser from './pages/SearchUser';
+import ProductList from './pages/ProductList';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
@@ -21,6 +22,7 @@ const route =
     <Route path='/login' element={<Login />} />
     <Route path='/register' element={<Register />} />
     <Route path='/searchuser' element={<SearchUser />} />
+    <Route path='/products' element={<ProductList />} />
   </Routes>
 </BrowserRouter>
 
