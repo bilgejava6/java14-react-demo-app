@@ -190,3 +190,12 @@ npm i react-router-dom
   
 ## FETCH & AXIOS Kullanımları
 
+
+## Fonctional Component & Props
+
+    bir komponent tanımladığınızda bunu içerisine muhtemelen bilgi göndermek isteyeceksiniz.
+  bu nedenle bu bileşenler birer method gibi düşünüldüğünde içerisine değer alabilmektedir.
+  siz bu function içerisiniz 'props' adı verilen bir atama işlemi ile değer yollayabilirsiniz.
+  React componentleri tag etiketlerinin içerisine properti alabilir ve bu bilgilei kendilerinin
+  oluşturan fonksiyonlara iletebilirler.
+  

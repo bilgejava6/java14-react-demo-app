@@ -1,6 +1,6 @@
 
 export const dataProperties = [
-    'Ana Kart', 'İşlemci', 'Ram', 'Harddisk', 'Monitör'
+    'Ana Kart', 'İşlemci', 'Ram', 'Harddisk', 'Monitör','Ekran Kartı'
 ];
 
 export const dataProductList = [
