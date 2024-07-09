@@ -16,7 +16,7 @@ function Yarisma() {
                 
             <GameLine takim={1} answerList={aTeamAnswer}/>
 
-            <GameLine takim={2} answerList={bTeamAnswer}/>
+            <GameLine takim={2} answerList={bTeamAnswer.reverse()}/>
 
                
             </div>
